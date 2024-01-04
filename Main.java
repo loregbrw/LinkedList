@@ -44,7 +44,7 @@ class Main {
             } else if (op == 0) {
                 break;
 
-            } if (throwFor)
+            } else {
                 continue;
 
             }
