@@ -4,9 +4,15 @@ class Main {
 
         // arr.addLast(1);
         // arr.addLast(3);
+        // arr.addLast(7);
+        // arr.addLast(8);
 
-        // System.out.println(arr.getLast());
-        // System.out.println(arr.getFirst());
+        // arr.add(0, 2);
+
+
+        // arr.printList();
+
+        // System.out.printf(" - " + arr.get(3));
 
         var queue = new PriorityQueue<Integer>((a, b) -> Integer.compare(a, b));
 
