@@ -1,11 +1,23 @@
 class Main {
   public static void main(String[] args) {
-        var arr = new LinkedList<Integer>();
+        // var arr = new LinkedList<Integer>();
 
-        arr.addLast(1);
-        arr.addLast(3);
+        // arr.addLast(1);
+        // arr.addLast(3);
 
-        System.out.println(arr.getLast());
-        System.out.println(arr.getFirst());
+        // System.out.println(arr.getLast());
+        // System.out.println(arr.getFirst());
+
+        var queue = new PriorityQueue<Integer>((a, b) -> Integer.compare(a, b));
+
+        queue.add(1);
+        queue.add(5);
+        queue.add(0);
+        queue.add(7);
+        
+        queue.add(3);
+        queue.add(11);
+        
+        queue.printQueue();
   }
 }
