@@ -1,3 +1,4 @@
+package linked_list;
 import java.util.Scanner;
 
 class Main {
