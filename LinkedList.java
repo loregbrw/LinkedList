@@ -59,8 +59,13 @@ public class LinkedList<E> {
             return;
         }
 
-        newNode.next = getNodeAt(index).next;
-        getNodeAt(index).next = newNode;
+        if (index <= 0) {
+            addFirst(node);
+            return;
+        }
+
+        newNode.next = getNodeAt(index - 1).next;
+        getNodeAt(index - 1).next = newNode;
 
         defineLast();
     }
@@ -134,6 +139,12 @@ public class LinkedList<E> {
         last = current;
         last.next = null;
         defineLast();
+    }
+
+    public void printList() {
+        for (int i = 0; i < size(); i++) {
+            System.out.print(get(i) + " ");
+        }
     }
 }
   

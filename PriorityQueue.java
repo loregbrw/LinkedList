@@ -15,7 +15,7 @@ public class PriorityQueue<E> {
 
     public void add(E value) {
         for (int i = 0; i < data.size(); i++) {
-            if (cmp.compare((E)value, (E)data.get(i)) < 0) {
+            if (cmp.compare((E)value, (E)data.get(i)) > 0) {
                 data.add(i, value);
                 return;
             }
@@ -32,8 +32,6 @@ public class PriorityQueue<E> {
     }
 
     public void printQueue() {
-        for(int i = 0; i < size(); i++) {
-            System.out.print(data.get(i) + " ");
-        }
+        data.printList();
     }
 }
