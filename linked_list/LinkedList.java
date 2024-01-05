@@ -1,3 +1,4 @@
+package linked_list;
 public class LinkedList<E> {
 
     private Node first;
