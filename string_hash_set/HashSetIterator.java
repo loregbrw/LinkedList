@@ -47,6 +47,6 @@ public class HashSetIterator implements Iterator<String> {
                 i = i == list.data.length - 1 ? 0 : i;
             }   
         }
-        return current;
+        return true;
     }
 }
