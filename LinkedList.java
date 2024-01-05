@@ -134,6 +134,11 @@ public class LinkedList<E> {
     public void removeLast() {
         Node current = first;
 
+        if (last == current && last != null) {
+            first = null;
+            last = null;
+        }
+
         while (true) {
             if (current.next == last)
                 break;
