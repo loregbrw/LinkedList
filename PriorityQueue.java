@@ -15,12 +15,12 @@ public class PriorityQueue<E> {
 
     public void add(E value) {
         for (int i = 0; i < data.size(); i++) {
-            if (cmp.compare((E)value, (E)data.get(i)) > 0) {
+            if (cmp.compare(value, data.get(i)) < 0) {
                 data.add(i, value);
                 return;
             }
         }
-        data.addFirst(value);
+        data.addLast(value);
     }
 
     public E peek() {

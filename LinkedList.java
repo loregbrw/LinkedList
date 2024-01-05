@@ -64,6 +64,11 @@ public class LinkedList<E> {
             return;
         }
 
+        if (index == size()) {
+            addLast(node);
+            return;
+        }
+
         newNode.next = getNodeAt(index - 1).next;
         getNodeAt(index - 1).next = newNode;
 
